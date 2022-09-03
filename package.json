@@ -1,0 +1,17 @@
+{
+  "name": "cortex-media",
+  "version": "1.0.0",
+  "description": "A simple fake media player written by Roark McKibben",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Djtpj",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.9.4"
+  }
+}

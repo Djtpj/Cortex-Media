@@ -1,0 +1,118 @@
+:root {
+    --main: #4F4F4Fff;
+    --main-second: #1D1D1Dff;
+    --accent: rgba(64, 64, 64, 0.68);
+    --bg-1: #1D1D1Dff;
+    --bg-2: #1D1D1Dff;
+}
+
+body {
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+    font-family: 'Anton', sans-serif;
+
+    text-align: center;
+
+    background: url("img/bg.jpg");
+    background-size: cover;
+
+    color: gainsboro;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+header {
+    z-index: 100;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    padding: 10px;
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background: var(--accent);
+    color: white;
+}
+
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    padding: 10px;
+
+    background: var(--accent);
+
+    z-index: 100;
+}
+
+.player-bar button {
+    position: relative;
+
+    width: 64px;
+}
+
+.player-bar img {
+    height: auto;
+    width: 100%;
+
+    filter: invert(100%);
+}
+
+.music {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 10%;
+    margin-bottom: 60%;
+
+    justify-content: space-evenly;
+}
+
+.cover img {
+    width: 256px;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+@media only screen and (max-width: 800px) {
+    .player-bar button {
+        width: 20%;
+    }
+
+    .cover img {
+        width: 128px;
+    }
+
+    header {
+        font-size: 15px;
+    }
+}
