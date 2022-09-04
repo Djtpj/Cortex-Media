@@ -17,6 +17,7 @@ body {
 
     color: gainsboro;
 
+    position: relative;
     overflow-x: hidden;
     overflow-y: auto;
 }
