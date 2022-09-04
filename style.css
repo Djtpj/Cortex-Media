@@ -17,9 +17,6 @@ body {
 
     color: gainsboro;
 
-
-    position: relative;
-    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -73,7 +70,7 @@ header {
 }
 
 .music {
-    position: absolute;
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -81,11 +78,14 @@ header {
     height: 100%;
     width: 100%;
 
+    overflow-x: hidden;
+    overflow-y: auto;
+
     flex-direction: row;
     flex-wrap: wrap;
 
-    margin-top: 10%;
-    margin-bottom: 60%;
+    margin-top: 12%;
+    margin-bottom: 10%;
 
     justify-content: space-evenly;
 }
